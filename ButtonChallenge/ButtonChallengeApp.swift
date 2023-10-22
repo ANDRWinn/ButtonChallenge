@@ -11,7 +11,25 @@ import SwiftUI
 struct ButtonChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                StandardTab()
+                    .tabItem {
+                        Label("Standard", systemImage: "list.dash")
+                    }
+                DisabledTab()
+                    .tabItem {
+                        Label("Disabled", systemImage: "list.dash")
+                    }
+                AsyncTab()
+                    .tabItem {
+                        Label("Async", systemImage: "list.dash")
+                    }
+                DisabledAsyncTab()
+                    .tabItem {
+                        Label("Disabled Async", systemImage: "list.dash")
+                    }
+            }
         }
+
     }
 }

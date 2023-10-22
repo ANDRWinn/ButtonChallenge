@@ -15,6 +15,10 @@
 		4DEAE3752AE57FA10049D7D0 /* ButtonChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3742AE57FA10049D7D0 /* ButtonChallengeUITests.swift */; };
 		4DEAE3772AE57FA10049D7D0 /* ButtonChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3762AE57FA10049D7D0 /* ButtonChallengeUITestsLaunchTests.swift */; };
 		4DEAE3872AE586BC0049D7D0 /* ButtonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DEAE3862AE586BC0049D7D0 /* ButtonKit */; };
+		4DEAE38A2AE589570049D7D0 /* StandardTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3892AE589570049D7D0 /* StandardTab.swift */; };
+		4DEAE38C2AE589720049D7D0 /* DisabledTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE38B2AE589720049D7D0 /* DisabledTab.swift */; };
+		4DEAE38E2AE589820049D7D0 /* AsyncTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE38D2AE589820049D7D0 /* AsyncTab.swift */; };
+		4DEAE3902AE5898D0049D7D0 /* DisabledAsyncTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE38F2AE5898D0049D7D0 /* DisabledAsyncTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		4DEAE3742AE57FA10049D7D0 /* ButtonChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChallengeUITests.swift; sourceTree = "<group>"; };
 		4DEAE3762AE57FA10049D7D0 /* ButtonChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4DEAE3842AE5861B0049D7D0 /* ButtonKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ButtonKit; sourceTree = "<group>"; };
+		4DEAE3892AE589570049D7D0 /* StandardTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTab.swift; sourceTree = "<group>"; };
+		4DEAE38B2AE589720049D7D0 /* DisabledTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledTab.swift; sourceTree = "<group>"; };
+		4DEAE38D2AE589820049D7D0 /* AsyncTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTab.swift; sourceTree = "<group>"; };
+		4DEAE38F2AE5898D0049D7D0 /* DisabledAsyncTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledAsyncTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			children = (
 				4DEAE3592AE57F9E0049D7D0 /* ButtonChallengeApp.swift */,
 				4DEAE35B2AE57F9E0049D7D0 /* ContentView.swift */,
+				4DEAE3882AE589340049D7D0 /* Tabs */,
 				4DEAE35D2AE57FA10049D7D0 /* Assets.xcassets */,
 				4DEAE35F2AE57FA10049D7D0 /* Preview Content */,
 			);
@@ -129,6 +138,17 @@
 				4DEAE3762AE57FA10049D7D0 /* ButtonChallengeUITestsLaunchTests.swift */,
 			);
 			path = ButtonChallengeUITests;
+			sourceTree = "<group>";
+		};
+		4DEAE3882AE589340049D7D0 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				4DEAE3892AE589570049D7D0 /* StandardTab.swift */,
+				4DEAE38B2AE589720049D7D0 /* DisabledTab.swift */,
+				4DEAE38D2AE589820049D7D0 /* AsyncTab.swift */,
+				4DEAE38F2AE5898D0049D7D0 /* DisabledAsyncTab.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DEAE35C2AE57F9E0049D7D0 /* ContentView.swift in Sources */,
+				4DEAE38A2AE589570049D7D0 /* StandardTab.swift in Sources */,
 				4DEAE35A2AE57F9E0049D7D0 /* ButtonChallengeApp.swift in Sources */,
+				4DEAE38E2AE589820049D7D0 /* AsyncTab.swift in Sources */,
+				4DEAE3902AE5898D0049D7D0 /* DisabledAsyncTab.swift in Sources */,
+				4DEAE38C2AE589720049D7D0 /* DisabledTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
