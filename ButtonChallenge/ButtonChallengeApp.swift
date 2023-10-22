@@ -14,19 +14,11 @@ struct ButtonChallengeApp: App {
             TabView {
                 StandardTab()
                     .tabItem {
-                        Label("Standard", systemImage: "list.dash")
-                    }
-                DisabledTab()
-                    .tabItem {
-                        Label("Disabled", systemImage: "list.dash")
+                        Label(LocalizedStrings.StandardTab.title, systemImage: "list.dash")
                     }
                 AsyncTab()
                     .tabItem {
-                        Label("Async", systemImage: "list.dash")
-                    }
-                DisabledAsyncTab()
-                    .tabItem {
-                        Label("Disabled Async", systemImage: "list.dash")
+                        Label(LocalizedStrings.AsyncTab.title, systemImage: "list.dash")
                     }
             }
         }
