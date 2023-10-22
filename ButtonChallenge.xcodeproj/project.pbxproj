@@ -44,6 +44,7 @@
 		4DEAE3702AE57FA10049D7D0 /* ButtonChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEAE3742AE57FA10049D7D0 /* ButtonChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChallengeUITests.swift; sourceTree = "<group>"; };
 		4DEAE3762AE57FA10049D7D0 /* ButtonChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DEAE3842AE5861B0049D7D0 /* ButtonKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ButtonKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		4DEAE34D2AE57F9E0049D7D0 = {
 			isa = PBXGroup;
 			children = (
+				4DEAE3842AE5861B0049D7D0 /* ButtonKit */,
 				4DEAE3582AE57F9E0049D7D0 /* ButtonChallenge */,
 				4DEAE3692AE57FA10049D7D0 /* ButtonChallengeTests */,
 				4DEAE3732AE57FA10049D7D0 /* ButtonChallengeUITests */,
