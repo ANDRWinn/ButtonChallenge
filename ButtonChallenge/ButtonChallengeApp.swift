@@ -11,7 +11,17 @@ import SwiftUI
 struct ButtonChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                StandardTab()
+                    .tabItem {
+                        Label(LocalizedStrings.StandardTab.title, systemImage: "list.dash")
+                    }
+                AsyncTab()
+                    .tabItem {
+                        Label(LocalizedStrings.AsyncTab.title, systemImage: "list.dash")
+                    }
+            }
         }
+
     }
 }

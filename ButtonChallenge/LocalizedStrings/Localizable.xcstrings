@@ -1,0 +1,48 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1 × Dozen Eggs \n2 × Loaves of Bread \n3 × Hand Soap Dispenser \n1 × Bootle of Shampp" : {
+      "comment" : "[Async Tab] Order details example text"
+    },
+    "Account Profile" : {
+      "comment" : "[Common] Account profile form header"
+    },
+    "Async" : {
+      "comment" : "[Async Tab] Tab Title"
+    },
+    "Disabled" : {
+      "comment" : "[Disabled Tab] Tab Title"
+    },
+    "Disabled Async" : {
+      "comment" : "[Disabled Async Tab] Tab Title"
+    },
+    "First Name" : {
+      "comment" : "[Common] First name field placeholder text"
+    },
+    "Last Name" : {
+      "comment" : "[Common] Last name field placeholder text"
+    },
+    "OK" : {
+      "comment" : "[Common] Ok button"
+    },
+    "Order Details" : {
+      "comment" : "[Async Tab] Order details header"
+    },
+    "Order Notes" : {
+      "comment" : "[Async Tab] Order notes placeholder text"
+    },
+    "Primary Button Tap Count: %lld" : {
+
+    },
+    "Secondary Button Tap Count: %lld" : {
+
+    },
+    "Standard" : {
+      "comment" : "[Standard Tab] Tab Title"
+    },
+    "Test Button" : {
+
+    }
+  },
+  "version" : "1.0"
+}
