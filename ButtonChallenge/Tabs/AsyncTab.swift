@@ -5,6 +5,7 @@
 //  Created by Andrew Winn on 10/22/23.
 //
 
+import ButtonKit
 import SwiftUI
 
 // MARK: -
@@ -30,12 +31,15 @@ struct AsyncTab: View {
             Text("Primary Button Tap Count: \(primaryTapCount)")
             Text("Secondary Button Tap Count: \(secondaryTapCount)")
 
-            Button("Test Button", action: {
+
+            StandardButton(status: .primary, "Primary") {
                 orderService.submitOrder()
                 primaryTapCount += 1
-            })
+            }
             .disabled(!viewModel.isValidOrder)
-            .background(orderService.isProcessingOrder ? Color.red : Color.green)
+            StandardButton(status: .secondary, "Cancel") {
+                primaryTapCount += 1
+            }
 
         }
     }

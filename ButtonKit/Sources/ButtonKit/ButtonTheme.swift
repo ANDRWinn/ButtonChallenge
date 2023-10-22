@@ -23,44 +23,29 @@ public struct ButtonTheme {
     public struct Colors {
         public let primaryColor: Color
         public let secondaryColor: Color
-        public let gradient: Gradient?
 
-        public init(primaryColor: Color, secondaryColor: Color, gradient: Gradient? = nil) {
+        public init(primaryColor: Color, secondaryColor: Color) {
             self.primaryColor = primaryColor
             self.secondaryColor = secondaryColor
-            self.gradient = gradient
-        }
-    }
-
-    public struct BackgroundImages {
-        public let primaryBackgroundImage: Image
-        public let secondaryBackgroundImage: Image
-
-        public init(primaryBackgroundImage: Image, secondaryBackgroundImage: Image) {
-            self.primaryBackgroundImage = primaryBackgroundImage
-            self.secondaryBackgroundImage = secondaryBackgroundImage
         }
     }
 
     // MARK: - Properties
     public let fonts: Fonts
     public let colors: Colors
-    public let backgroundImages: BackgroundImages?
 
-    public init(fonts: ButtonTheme.Fonts, colors: ButtonTheme.Colors, backgroundImages: ButtonTheme.BackgroundImages? = nil) {
+    public init(fonts: ButtonTheme.Fonts, colors: ButtonTheme.Colors) {
         self.fonts = fonts
         self.colors = colors
-        self.backgroundImages = backgroundImages
     }
 }
 
 // MARK: - Presets
 public extension ButtonTheme {
     private static let defaultFonts: ButtonTheme.Fonts = .init(primaryFont: .title2)
-    private static let defaultColors: ButtonTheme.Colors = .init(primaryColor: .blue, secondaryColor: .white, gradient: nil)
+    private static let defaultColors: ButtonTheme.Colors = .init(primaryColor: .blue, secondaryColor: .white)
     static let `default` = ButtonTheme(fonts: defaultFonts,
-                                       colors: defaultColors,
-                                       backgroundImages: nil)
+                                       colors: defaultColors)
 }
 
 private struct ButtonThemeEnvironmentKey: EnvironmentKey {

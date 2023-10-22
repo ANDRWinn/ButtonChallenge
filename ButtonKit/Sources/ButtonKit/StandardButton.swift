@@ -10,21 +10,44 @@ import SwiftUI
 // MARK: -
 public struct StandardButton<Label: View>: View {
 
-    // MARK: - Properties
+    // MARK: - Public Properties
     let status: StandardButtonStyle.Status
-    let action: () -> Void
+    var action: () -> Void
+    let asyncAction:  (() async -> Void)?
     @ViewBuilder var label: () -> Label
+
+    // MARK: - Private Properties
+    @State private var isBusy: Bool = false
 
     // MARK: - Initialization
     public init(status: StandardButtonStyle.Status, action: @escaping () -> Void, label: @escaping () -> Label) {
         self.status = status
         self.action = action
+        self.asyncAction = nil
+        self.label = label
+    }
+
+    public init(status: StandardButtonStyle.Status, asyncAction: @escaping () async -> Void, label: @escaping () -> Label) {
+        self.status = status
+        self.action = { }
+        self.asyncAction = asyncAction
         self.label = label
     }
 
     // MARK: - Body
     public var body: some View {
-        Button(action: action, label: label)
+        Button(action: { 
+            if let asyncAction = self.asyncAction {
+                isBusy = true
+                Task {
+                    await asyncAction()
+                }
+                isBusy = false
+            } else {
+                action()
+            }
+        }
+               , label: label)
             .buttonStyle(StandardButtonStyle(status: status))
     }
 }

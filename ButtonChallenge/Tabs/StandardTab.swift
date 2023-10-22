@@ -29,7 +29,7 @@ struct StandardTab: View {
 
 
             // Button container goes here
-            StandardButton(status: .primary, "Primary", action: { primaryTapCount += 1 } )
+            StandardButton(status: .primary, "Primary") { primaryTapCount += 1 }
         }
     }
 }
