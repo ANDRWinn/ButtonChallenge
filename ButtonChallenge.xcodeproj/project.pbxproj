@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		4DEAE36B2AE57FA10049D7D0 /* ButtonChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE36A2AE57FA10049D7D0 /* ButtonChallengeTests.swift */; };
 		4DEAE3752AE57FA10049D7D0 /* ButtonChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3742AE57FA10049D7D0 /* ButtonChallengeUITests.swift */; };
 		4DEAE3772AE57FA10049D7D0 /* ButtonChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3762AE57FA10049D7D0 /* ButtonChallengeUITestsLaunchTests.swift */; };
+		4DEAE3872AE586BC0049D7D0 /* ButtonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DEAE3862AE586BC0049D7D0 /* ButtonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEAE3872AE586BC0049D7D0 /* ButtonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +77,10 @@
 		4DEAE34D2AE57F9E0049D7D0 = {
 			isa = PBXGroup;
 			children = (
-				4DEAE3842AE5861B0049D7D0 /* ButtonKit */,
 				4DEAE3582AE57F9E0049D7D0 /* ButtonChallenge */,
 				4DEAE3692AE57FA10049D7D0 /* ButtonChallengeTests */,
 				4DEAE3732AE57FA10049D7D0 /* ButtonChallengeUITests */,
+				4DEAE3842AE5861B0049D7D0 /* ButtonKit */,
 				4DEAE3572AE57F9E0049D7D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = ButtonChallenge;
+			packageProductDependencies = (
+				4DEAE3862AE586BC0049D7D0 /* ButtonKit */,
+			);
 			productName = ButtonChallenge;
 			productReference = 4DEAE3562AE57F9E0049D7D0 /* ButtonChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 4DEAE34D2AE57F9E0049D7D0;
+			packageReferences = (
+				4DEAE3852AE586BC0049D7D0 /* XCLocalSwiftPackageReference "ButtonKit" */,
+			);
 			productRefGroup = 4DEAE3572AE57F9E0049D7D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -592,6 +600,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4DEAE3852AE586BC0049D7D0 /* XCLocalSwiftPackageReference "ButtonKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ButtonKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DEAE3862AE586BC0049D7D0 /* ButtonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ButtonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4DEAE34E2AE57F9E0049D7D0 /* Project object */;
 }
