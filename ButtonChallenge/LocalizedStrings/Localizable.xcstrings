@@ -31,6 +31,9 @@
     "Order Notes" : {
       "comment" : "[Async Tab] Order notes placeholder text"
     },
+    "Primary" : {
+
+    },
     "Primary Button Tap Count: %lld" : {
 
     },

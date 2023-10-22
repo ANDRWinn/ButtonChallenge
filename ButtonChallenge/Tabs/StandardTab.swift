@@ -5,6 +5,7 @@
 //  Created by Andrew Winn on 10/22/23.
 //
 
+import ButtonKit
 import SwiftUI
 
 // MARK: -
@@ -28,6 +29,7 @@ struct StandardTab: View {
 
 
             // Button container goes here
+            StandardButton(status: .primary, "Primary", action: { primaryTapCount += 1 } )
         }
     }
 }
