@@ -5,25 +5,22 @@
       "comment" : "[Async Tab] Order details example text"
     },
     "Account Profile" : {
-      "comment" : "[Common] Account profile form header"
+      "comment" : "[Standard Tab] Account profile form header"
     },
     "Async" : {
       "comment" : "[Async Tab] Tab Title"
     },
-    "Disabled" : {
-      "comment" : "[Disabled Tab] Tab Title"
+    "Cancel" : {
+      "comment" : "[Common] Cancel button"
     },
-    "Disabled Async" : {
-      "comment" : "[Disabled Async Tab] Tab Title"
+    "Cancel Button Tap Count: %lld" : {
+
     },
     "First Name" : {
-      "comment" : "[Common] First name field placeholder text"
+      "comment" : "[Standard Tab] First name field placeholder text"
     },
     "Last Name" : {
-      "comment" : "[Common] Last name field placeholder text"
-    },
-    "OK" : {
-      "comment" : "[Common] Ok button"
+      "comment" : "[Standard Tab] Last name field placeholder text"
     },
     "Order Details" : {
       "comment" : "[Async Tab] Order details header"
@@ -31,8 +28,20 @@
     "Order Notes" : {
       "comment" : "[Async Tab] Order notes placeholder text"
     },
+    "Please fill out both name fields" : {
+      "comment" : "[Standard Tab] Standard tab accessibility hint for disabled button"
+    },
+    "Please fill out the order notes field" : {
+      "comment" : "[Async Tab] Order notes accessibility hint for disabled button"
+    },
+    "Primary" : {
+      "comment" : "[Common] Primary button"
+    },
     "Primary Button Tap Count: %lld" : {
 
+    },
+    "Secondary" : {
+      "comment" : "[Common] Secondary button"
     },
     "Secondary Button Tap Count: %lld" : {
 
@@ -40,8 +49,8 @@
     "Standard" : {
       "comment" : "[Standard Tab] Tab Title"
     },
-    "Test Button" : {
-
+    "Submitting order..." : {
+      "comment" : "[Async Tab] Submitting order"
     }
   },
   "version" : "1.0"

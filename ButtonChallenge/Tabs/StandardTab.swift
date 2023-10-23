@@ -5,6 +5,7 @@
 //  Created by Andrew Winn on 10/22/23.
 //
 
+import ButtonKit
 import SwiftUI
 
 // MARK: -
@@ -18,16 +19,17 @@ struct StandardTab: View {
     // MARK: - Body
     var body: some View {
         Form {
-            Section(header: Text(LocalizedStrings.StandardTab.accountProfile)) {
-                TextField(LocalizedStrings.StandardTab.firstName, text: $viewModel.firstName)
-                TextField(LocalizedStrings.StandardTab.lastName, text: $viewModel.lastName)
+            Section(header: Text(Localized.StandardTab.accountProfile)) {
+                TextField(Localized.StandardTab.firstName, text: $viewModel.firstName)
+                TextField(Localized.StandardTab.lastName, text: $viewModel.lastName)
             }
 
             Text("Primary Button Tap Count: \(primaryTapCount)")
             Text("Secondary Button Tap Count: \(secondaryTapCount)")
 
-
-            // Button container goes here
+            StandardButton(status: .primary, Localized.Common.primary.key) { primaryTapCount += 1 }
+                .accessiblyDisabled(!viewModel.isValidForm, accessibilityHint: Localized.StandardTab.disabledHint)
+            StandardButton(status: .secondary, Localized.Common.secondary.key) { secondaryTapCount += 1 }
         }
     }
 }

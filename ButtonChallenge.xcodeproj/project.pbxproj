@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2EF4B32AE5C0FB0059FA74 /* HolidayThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2EF4B22AE5C0FB0059FA74 /* HolidayThemes.swift */; };
 		4DEAE35A2AE57F9E0049D7D0 /* ButtonChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3592AE57F9E0049D7D0 /* ButtonChallengeApp.swift */; };
 		4DEAE35E2AE57FA10049D7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAE35D2AE57FA10049D7D0 /* Assets.xcassets */; };
 		4DEAE3612AE57FA10049D7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAE3602AE57FA10049D7D0 /* Preview Assets.xcassets */; };
@@ -16,7 +17,7 @@
 		4DEAE3872AE586BC0049D7D0 /* ButtonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DEAE3862AE586BC0049D7D0 /* ButtonKit */; };
 		4DEAE38A2AE589570049D7D0 /* StandardTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3892AE589570049D7D0 /* StandardTab.swift */; };
 		4DEAE38E2AE589820049D7D0 /* AsyncTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE38D2AE589820049D7D0 /* AsyncTab.swift */; };
-		4DEAE3922AE58AC10049D7D0 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3912AE58AC10049D7D0 /* LocalizedStrings.swift */; };
+		4DEAE3922AE58AC10049D7D0 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3912AE58AC10049D7D0 /* Localized.swift */; };
 		4DEAE3952AE58AF20049D7D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAE3942AE58AF20049D7D0 /* Localizable.xcstrings */; };
 		4DEAE3982AE58F260049D7D0 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3972AE58F260049D7D0 /* OrderService.swift */; };
 		4DEAE39B2AE5A54B0049D7D0 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE39A2AE5A54B0049D7D0 /* FormViewModel.swift */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D2EF4B22AE5C0FB0059FA74 /* HolidayThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayThemes.swift; sourceTree = "<group>"; };
+		4DCDEF602AE61FDE00E625A7 /* StandardButton.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = StandardButton.md; path = ButtonKit/Sources/ButtonKit/Documentation.docc/Extensions/StandardButton.md; sourceTree = "<group>"; };
 		4DEAE3562AE57F9E0049D7D0 /* ButtonChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEAE3592AE57F9E0049D7D0 /* ButtonChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChallengeApp.swift; sourceTree = "<group>"; };
 		4DEAE35D2AE57FA10049D7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,7 +56,7 @@
 		4DEAE3842AE5861B0049D7D0 /* ButtonKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ButtonKit; sourceTree = "<group>"; };
 		4DEAE3892AE589570049D7D0 /* StandardTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTab.swift; sourceTree = "<group>"; };
 		4DEAE38D2AE589820049D7D0 /* AsyncTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTab.swift; sourceTree = "<group>"; };
-		4DEAE3912AE58AC10049D7D0 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		4DEAE3912AE58AC10049D7D0 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		4DEAE3942AE58AF20049D7D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4DEAE3972AE58F260049D7D0 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
 		4DEAE39A2AE5A54B0049D7D0 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
@@ -86,9 +89,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D2EF4AF2AE5C0710059FA74 /* CustomThemes */ = {
+			isa = PBXGroup;
+			children = (
+				4D2EF4B22AE5C0FB0059FA74 /* HolidayThemes.swift */,
+			);
+			path = CustomThemes;
+			sourceTree = "<group>";
+		};
 		4DEAE34D2AE57F9E0049D7D0 = {
 			isa = PBXGroup;
 			children = (
+				4DCDEF602AE61FDE00E625A7 /* StandardButton.md */,
 				4DEAE3582AE57F9E0049D7D0 /* ButtonChallenge */,
 				4DEAE3692AE57FA10049D7D0 /* ButtonChallengeTests */,
 				4DEAE3732AE57FA10049D7D0 /* ButtonChallengeUITests */,
@@ -114,6 +126,7 @@
 				4DEAE3882AE589340049D7D0 /* Tabs */,
 				4DEAE3962AE58F0C0049D7D0 /* Services */,
 				4DEAE3992AE5A51A0049D7D0 /* ViewModels */,
+				4D2EF4AF2AE5C0710059FA74 /* CustomThemes */,
 				4DEAE3932AE58AD10049D7D0 /* LocalizedStrings */,
 				4DEAE35D2AE57FA10049D7D0 /* Assets.xcassets */,
 				4DEAE35F2AE57FA10049D7D0 /* Preview Content */,
@@ -158,7 +171,7 @@
 		4DEAE3932AE58AD10049D7D0 /* LocalizedStrings */ = {
 			isa = PBXGroup;
 			children = (
-				4DEAE3912AE58AC10049D7D0 /* LocalizedStrings.swift */,
+				4DEAE3912AE58AC10049D7D0 /* Localized.swift */,
 				4DEAE3942AE58AF20049D7D0 /* Localizable.xcstrings */,
 			);
 			path = LocalizedStrings;
@@ -323,7 +336,8 @@
 				4DEAE35A2AE57F9E0049D7D0 /* ButtonChallengeApp.swift in Sources */,
 				4DEAE39D2AE5AA150049D7D0 /* OrderViewModel.swift in Sources */,
 				4DEAE38E2AE589820049D7D0 /* AsyncTab.swift in Sources */,
-				4DEAE3922AE58AC10049D7D0 /* LocalizedStrings.swift in Sources */,
+				4DEAE3922AE58AC10049D7D0 /* Localized.swift in Sources */,
+				4D2EF4B32AE5C0FB0059FA74 /* HolidayThemes.swift in Sources */,
 				4DEAE39B2AE5A54B0049D7D0 /* FormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ButtonChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 2P2XYU74GV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -520,6 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ButtonChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 2P2XYU74GV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
