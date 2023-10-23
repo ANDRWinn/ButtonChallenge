@@ -25,13 +25,23 @@ public struct StandardButton<Label: View>: View {
     @State private var isBusy: Bool = false
 
     // MARK: - Initialization
+    /// Creates a standard styled button with the specified status, synchronous action, and label view.
+    /// - Parameters:
+    ///   - status: The ``StandardButtonStyle/Status`` of the button. Used for styling the button.
+    ///   - action: The synchronous action to perform when the button is tapped.
+    ///   - label: The view to use as the button's label.
     public init(status: StandardButtonStyle.Status, action: @escaping () -> Void, label: @escaping () -> Label) {
         self.status = status
         self.action = action
         self.asyncAction = nil
         self.label = label
     }
-
+    
+    /// Creates a standard styled button with the specified status, asynchronous action, and label view.
+    /// - Parameters:
+    ///   - status: The ``StandardButtonStyle/Status`` of the button. Used for styling the button.
+    ///   - asyncAction: The asynchronous action to perform when the button is tapped.
+    ///   - label: The view to use as the button's label.
     public init(status: StandardButtonStyle.Status, asyncAction: @escaping () async -> Void, label: @escaping () -> Label) {
         self.status = status
         self.action = { assertionFailure("Synchronous action called using async action intializer") }
@@ -66,12 +76,22 @@ public struct StandardButton<Label: View>: View {
 
 // MARK: - Additional Initializers
 public extension StandardButton where Label == Text {
+    /// Creates a standard styled button with the specified status, synchronous action, and title key for use in a Text() label view.
+    /// - Parameters:
+    ///   - status: The ``StandardButtonStyle/Status`` of the button. Used for styling the button.
+    ///   - titleKey: `LocalizedStringKey` used to generate the button's Text() label view.
+    ///   - action: The synchronous action to perform when the button is tapped.
     init(status: StandardButtonStyle.Status, _ titleKey: LocalizedStringKey, action: @escaping () -> Void) {
         self.init(status: status, action: action) {
             Text(titleKey)
         }
     }
-
+    
+    /// Creates a standard styled button with the specified status, asynchronous action, and title key for use in a Text() label view.
+    /// - Parameters:
+    ///   - status: The ``StandardButtonStyle/Status`` of the button. Used for styling the button.
+    ///   - titleKey: `LocalizedStringKey` used to generate the button's Text() label view.
+    ///   - asyncAction: The asynchronous action to perform when the button is tapped.
     init(status: StandardButtonStyle.Status, _ titleKey: LocalizedStringKey, asyncAction: @escaping () async -> Void) {
         self.init(status: status, asyncAction: asyncAction) {
             Text(titleKey)
@@ -80,12 +100,22 @@ public extension StandardButton where Label == Text {
 }
 
 public extension StandardButton where Label == Image {
+    /// Creates a standard styled button with the specified status, synchronous action, and system image name for use in a Image() label view
+    /// - Parameters:
+    ///   - status: The ``StandardButtonStyle/Status`` of the button. Used for styling the button.
+    ///   - systemImageName: The name of the system image to be used for the button's Image() label.
+    ///   - action: The synchronous action to perform when the button is tapped.
     init(status: StandardButtonStyle.Status, systemImageName: String, action: @escaping () -> Void) {
         self.init(status: status, action: action) {
             Image(systemName: systemImageName)
         }
     }
-
+    
+     /// Creates a standard styled button with the specified status, asynchronous action, and system image name for use in a Image() label view
+    /// - Parameters:
+    ///   - status: The ``StandardButtonStyle/Status`` of the button. Used for styling the button.
+    ///   - systemImageName: The name of the system image to be used for the button's Image() label.
+    ///   - asyncAction: The asynchronous action to perform when the button is tapped.
     init(status: StandardButtonStyle.Status, systemImageName: String, asyncAction: @escaping () async -> Void) {
         self.init(status: status, asyncAction: asyncAction) {
             Image(systemName: systemImageName)
@@ -93,10 +123,15 @@ public extension StandardButton where Label == Image {
     }
 }
 
+/// A button style that is used with common CTAs repeatedly through out the app. e.g. "Confirm," "Cancel," or "Submit" buttons. Similar to ``StandardButton``, but the style itself does not facilitate asynchronous button actions.
 public struct StandardButtonStyle: ButtonStyle {
     // MARK: - Subtypes
+    
+    /// An enum that controls how a ``ButtonTheme``'s fonts and colors are applied.
     public enum Status {
+        /// Button status for a primary standard styled button.
         case primary
+        /// Button status for a primary standard styled button.
         case secondary
     }
 

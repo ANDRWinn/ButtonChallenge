@@ -43,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		4D2EF4B22AE5C0FB0059FA74 /* HolidayThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayThemes.swift; sourceTree = "<group>"; };
+		4DCDEF602AE61FDE00E625A7 /* StandardButton.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = StandardButton.md; path = ButtonKit/Sources/ButtonKit/Documentation.docc/Extensions/StandardButton.md; sourceTree = "<group>"; };
 		4DEAE3562AE57F9E0049D7D0 /* ButtonChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEAE3592AE57F9E0049D7D0 /* ButtonChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChallengeApp.swift; sourceTree = "<group>"; };
 		4DEAE35D2AE57FA10049D7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		4DEAE34D2AE57F9E0049D7D0 = {
 			isa = PBXGroup;
 			children = (
+				4DCDEF602AE61FDE00E625A7 /* StandardButton.md */,
 				4DEAE3582AE57F9E0049D7D0 /* ButtonChallenge */,
 				4DEAE3692AE57FA10049D7D0 /* ButtonChallengeTests */,
 				4DEAE3732AE57FA10049D7D0 /* ButtonChallengeUITests */,

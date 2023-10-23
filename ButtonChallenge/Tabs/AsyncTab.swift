@@ -31,7 +31,7 @@ struct AsyncTab: View {
             Text("Cancel Button Tap Count: \(secondaryTapCount)")
 
 
-            StandardButton(status: .primary, Localized.AsyncTab.submittingOrder.key, asyncAction: orderService.submitOrder)
+            StandardButton(status: .primary, Localized.AsyncTab.submitOrderCTA.key, asyncAction: orderService.submitOrder)
                 .accessiblyDisabled(!viewModel.isValidOrder || orderService.isProcessingOrder,
                                     accessibilityHint: Localized.AsyncTab.disabledHint)
             StandardButton(status: .secondary, Localized.Common.cancel.key) {

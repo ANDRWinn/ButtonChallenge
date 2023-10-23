@@ -20,7 +20,7 @@ enum Localized {
         static let accountProfile = NSLocalizedString("Account Profile", comment: "[Standard Tab] Account profile form header")
         static let firstName = NSLocalizedString("First Name", comment: "[Standard Tab] First name field placeholder text")
         static let lastName = NSLocalizedString("Last Name", comment: "[Standard Tab] Last name field placeholder text")
-        static let disabledHint = NSLocalizedString("Please fill out both name fields", comment: "[Standard Tab] Standard tab accessibility hint for disabled button")
+        static let disabledHint = NSLocalizedString("Button Disabled. Please fill out both name fields", comment: "[Standard Tab] Standard tab accessibility hint for disabled button")
 
     }
 
@@ -30,7 +30,8 @@ enum Localized {
         static let orderDetails = NSLocalizedString("1 × Dozen Eggs \n2 × Loaves of Bread \n3 × Hand Soap Dispenser \n1 × Bootle of Shampp", comment: "[Async Tab] Order details example text")
         static let orderNotes = NSLocalizedString("Order Notes", comment: "[Async Tab] Order notes placeholder text")
         static let submittingOrder = NSLocalizedString("Submitting order...", comment: "[Async Tab] Submitting order")
-        static let disabledHint = NSLocalizedString("Please fill out the order notes field", comment: "[Async Tab] Order notes accessibility hint for disabled button")
+        static let submitOrderCTA = NSLocalizedString("Submit Order", comment: "[Async Tab] Submit Order button CTA")
+        static let disabledHint = NSLocalizedString("Button Disabled. Please fill out the order notes field", comment: "[Async Tab] Order notes accessibility hint for disabled button")
 
     }
 }
