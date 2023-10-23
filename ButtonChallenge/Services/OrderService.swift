@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Protocol
 protocol OrderService: AnyObject {
     var isProcessingOrder: Bool { get }
-    func submitOrder()
+    func submitOrder() async
 }
 
 // MARK: -
@@ -20,10 +20,13 @@ class MockOrderService: OrderService, ObservableObject {
     @Published var isProcessingOrder: Bool = false
 
     // MARK: - Public
-    func submitOrder() {
-        isProcessingOrder = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            self.isProcessingOrder = false
+    func submitOrder() async {
+        await MainActor.run {
+            isProcessingOrder = true
+        }
+        try? await Task.sleep(nanoseconds: 3 * 1_000_000_000)
+        await MainActor.run {
+            isProcessingOrder = false
         }
     }
 }

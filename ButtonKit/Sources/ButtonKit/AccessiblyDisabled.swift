@@ -8,14 +8,14 @@
 import SwiftUI
 
 // MARK: -
-struct AccessiblyDisabled: ViewModifier {
+public struct AccessiblyDisabled: ViewModifier {
 
     // MARK: - Properties
-    let isDisabled: Bool
-    let accessibilityHint: String
+    public let isDisabled: Bool
+    public let accessibilityHint: String
 
     // MARK: - Body
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .disabled(isDisabled)
             .accessibilityHint(accessibilityHint)
@@ -23,7 +23,7 @@ struct AccessiblyDisabled: ViewModifier {
 }
 
 // MARK: - Modifier convenience extension
-extension View {
+public extension View {
     func accessiblyDisabled(_ isDisabled: Bool, accessibilityHint: String) -> some View {
         modifier(AccessiblyDisabled(isDisabled: isDisabled, accessibilityHint: accessibilityHint))
     }

@@ -17,7 +17,7 @@
 		4DEAE3872AE586BC0049D7D0 /* ButtonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4DEAE3862AE586BC0049D7D0 /* ButtonKit */; };
 		4DEAE38A2AE589570049D7D0 /* StandardTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3892AE589570049D7D0 /* StandardTab.swift */; };
 		4DEAE38E2AE589820049D7D0 /* AsyncTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE38D2AE589820049D7D0 /* AsyncTab.swift */; };
-		4DEAE3922AE58AC10049D7D0 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3912AE58AC10049D7D0 /* LocalizedStrings.swift */; };
+		4DEAE3922AE58AC10049D7D0 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3912AE58AC10049D7D0 /* Localized.swift */; };
 		4DEAE3952AE58AF20049D7D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAE3942AE58AF20049D7D0 /* Localizable.xcstrings */; };
 		4DEAE3982AE58F260049D7D0 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE3972AE58F260049D7D0 /* OrderService.swift */; };
 		4DEAE39B2AE5A54B0049D7D0 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAE39A2AE5A54B0049D7D0 /* FormViewModel.swift */; };
@@ -55,7 +55,7 @@
 		4DEAE3842AE5861B0049D7D0 /* ButtonKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ButtonKit; sourceTree = "<group>"; };
 		4DEAE3892AE589570049D7D0 /* StandardTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTab.swift; sourceTree = "<group>"; };
 		4DEAE38D2AE589820049D7D0 /* AsyncTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTab.swift; sourceTree = "<group>"; };
-		4DEAE3912AE58AC10049D7D0 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		4DEAE3912AE58AC10049D7D0 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		4DEAE3942AE58AF20049D7D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4DEAE3972AE58F260049D7D0 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
 		4DEAE39A2AE5A54B0049D7D0 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		4DEAE3932AE58AD10049D7D0 /* LocalizedStrings */ = {
 			isa = PBXGroup;
 			children = (
-				4DEAE3912AE58AC10049D7D0 /* LocalizedStrings.swift */,
+				4DEAE3912AE58AC10049D7D0 /* Localized.swift */,
 				4DEAE3942AE58AF20049D7D0 /* Localizable.xcstrings */,
 			);
 			path = LocalizedStrings;
@@ -334,7 +334,7 @@
 				4DEAE35A2AE57F9E0049D7D0 /* ButtonChallengeApp.swift in Sources */,
 				4DEAE39D2AE5AA150049D7D0 /* OrderViewModel.swift in Sources */,
 				4DEAE38E2AE589820049D7D0 /* AsyncTab.swift in Sources */,
-				4DEAE3922AE58AC10049D7D0 /* LocalizedStrings.swift in Sources */,
+				4DEAE3922AE58AC10049D7D0 /* Localized.swift in Sources */,
 				4D2EF4B32AE5C0FB0059FA74 /* HolidayThemes.swift in Sources */,
 				4DEAE39B2AE5A54B0049D7D0 /* FormViewModel.swift in Sources */,
 			);
