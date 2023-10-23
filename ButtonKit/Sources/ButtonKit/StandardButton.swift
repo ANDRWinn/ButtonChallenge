@@ -8,6 +8,11 @@
 import SwiftUI
 
 // MARK: -
+/// A standard styled button that is used with common CTAs repeatedly through out the app. e.g. "Confirm," "Cancel," or "Submit" buttons.
+///
+/// The button handles it's own styled appearance based on the ``ButtonTheme`` in the current view environment. So custom themes can be applied to change its appearance with the ``buttonStyle(_:)-1waku`` modifier.
+///
+/// Can be used with either a synchronous button action or an asynchronous button action based on the initializer that is used. When performing an asynchronous action, the button displays a `ProgressView` in place of the button `label`.
 public struct StandardButton<Label: View>: View {
 
     // MARK: - Public Properties
